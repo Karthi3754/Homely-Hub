@@ -1,3 +1,1 @@
-# StayInn
 
-Airbnb clone
