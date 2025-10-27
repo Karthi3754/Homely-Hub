@@ -13,4 +13,9 @@ app.use(cookieParser());
 app.use("/api/v1/rent/listing", propertyRoutes);
 app.use("/api/v1/rent/user", userRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Service is live!');
+});
+
+
 module.exports = app;
