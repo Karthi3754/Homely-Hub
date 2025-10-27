@@ -36,8 +36,7 @@ const Card=({id,image,address,price,name})=>{
 const PropertyList = () => {
 
   const [currentPage, setCurrentPage]=useState({page:1});
-  const {properties,totalProperties}=useSelector(
-    (state)=> state.properties);
+  const { properties = [], totalProperties = 0 } = useSelector((state) => state.properties || {});
 
   const lastpage=Math.ceil(totalProperties/12);
   const dispatch=useDispatch();
