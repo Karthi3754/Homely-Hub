@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "../../CSS/FilterModal.css";
-import "react-input-range/lib/css/index.css"; //importing css file for input range styling
-import InputRange from "react-input-range";
+import 'rc-slider/assets/index.css';
+import InputRange from "rc-slider";
 
 const FilterModal = ({ selectedFilters, onFilterChange, onClose }) => {
   const [priceRange, setPriceRange] = useState({
