@@ -6,6 +6,9 @@ const cookieParser = require("cookie-parser");
 const app = express();
 
 // Middleware
+const path = require('path');
+app.use('/Database', express.static(path.join(__dirname, 'Database')));
+
 app.use(express.json());
 app.use(cookieParser());
 
